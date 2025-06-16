@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinkit - Online Grocery Delivery</title>
+  <meta name="description" content="Order groceries online and get delivery in minutes with Blinkit">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="yellow">blink</span><span class="green">it</span>
+    </div>
+
+    <div class="location">
+      <div class="delivery-time">Delivery to?</div>
+      <div class="location-text">finding locaation... <i class="fas fa-chevron-down"></i></div>
+    </div>
+
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder='Search "chocolate"' aria-label="Search products">
+    </div>
+
+    <div class="login">Login</div>
+
+    <div class="cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span>My Cart</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <div class="top-banner">
+          <img src="paan.webp" alt="Paan Corner Banner" loading="lazy">
+        </div>
+
+        <div class="card-row">
+          <img src="pharmacy-WEB.avif" alt="Pharmacy" loading="lazy">
+          <img src="Pet-Care_WEB.avif" alt="Pet Care" loading="lazy">
+          <img src="babycare-WEB.avif" alt="Baby Care" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section">
+      <h2 class="sr-only">Product Categories</h2>
+      <div class="category-grid">
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="Paan Corner" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="Dairy, Bread & Eggs" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png" alt="Fruits & Vegetables" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png" alt="Cold Drinks" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png" alt="Snacks" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png" alt="Breakfast" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png" alt="Sweet Tooth" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png" alt="Bakery & Biscuits" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png" alt="Tea & Coffee" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png" alt="Atta Rice Dal" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-11.png" alt="Masala" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-12.png" alt="Sauces" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-13.png" alt="Chicken" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png" alt="Organic" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-15.png" alt="Baby Care" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png" alt="Pharma" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png" alt="Cleaning" loading="lazy">
+        </div>
+        <div class="category-item">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png" alt="Home & Office" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <h2>Dairy, Bread & Eggs</h2>
+      <div class="product-container">
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c2b22cd4-b144-4266-901a-ff4ae82aa912.jpg?ts=1726473621" alt="Amul Masti Curd" class="product-image" loading="lazy">
+          <div class="product-info">Amul Masti Curd</div>
+          <div class="product-info">1 kg</div>
+          <div class="product-price">₹77</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/1c0db977-31ab-4d8e-abf3-d42e4a4b4632.jpg?ts=1706182142" alt="Amul Gold Full Cream Milk" class="product-image" loading="lazy">
+          <div class="product-info">Amul Gold Full Cream Milk</div>
+          <div class="product-info">500 ml</div>
+          <div class="product-price">₹35</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/930c899a-a2d4-402b-b331-85b502ffc427.jpg?ts=1747913193" alt="Bonn High Fibre Brown Bread" class="product-image" loading="lazy">
+          <div class="product-info">Bonn High Fibre Brown Bread</div>
+          <div class="product-info">400 g</div>
+          <div class="product-price">₹53</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/2df2d213-2fe5-4b52-a620-67374937e6dc.jpg?ts=1747214148" alt="Bonn Whole Wheat Bread" class="product-image" loading="lazy">
+          <div class="product-info">Bonn Zero Maida Atta Whole Wheat Bread</div>
+          <div class="product-info">400 g</div>
+          <div class="product-price">₹55</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6ae62ec2-3b13-4fff-b052-2ff3d4ef2d16.jpg?ts=1726473593" alt="Amul Masti Pouch Curd" class="product-image" loading="lazy">
+          <div class="product-info">Amul Masti Pouch Curd</div>
+          <div class="product-info">400 g</div>
+          <div class="product-price">₹35</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="Amul Taaza Toned Milk" class="product-image" loading="lazy">
+          <div class="product-info">Amul Taaza Toned Milk</div>
+          <div class="product-info">500 ml</div>
+          <div class="product-price">₹29</div>
+          <button class="add-button">ADD</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <h2>Rolling paper & tobacco</h2>
+      <div class="product-container">
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/661d1bd8-2374-47ad-b231-af4842bd5d50.jpg?ts=1740560975" alt="Perfect Rolled Cones" class="product-image" loading="lazy">
+          <h3 class="product-title">Perfect Rolled Cones (Natural) - Bongchie</h3>
+          <div class="product-subtitle">3 pack</div>
+          <div class="product-price">₹45</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/512860a.jpg?ts=1690832312" alt="Ultimate Rolling Paper Blue" class="product-image" loading="lazy">
+          <h3 class="product-title">Ultimate Rolling Paper with Filter Tips &...</h3>
+          <div class="product-subtitle">1 pack (32 Leaves + 32...)</div>
+          <div class="product-price">₹80</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/478728a.jpg?ts=1690814280" alt="Ultimate Rolling Paper Green" class="product-image" loading="lazy">
+          <h3 class="product-title">Ultimate Rolling Paper with Filter Tips &...</h3>
+          <div class="product-subtitle">1 pack (32 pieces)</div>
+          <div class="product-price">₹90</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/deee5ea4-214b-4d67-8dbb-46d3bacb589d.jpg?ts=1736847248" alt="Glass Filter Tip" class="product-image" loading="lazy">
+          <h3 class="product-title">Glass Filter Tip Reusable Smoking Filter...</h3>
+          <div class="product-subtitle">1 unit</div>
+          <div class="product-price">₹50</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/506375a.jpg?ts=1698309252" alt="Ripper Tipper" class="product-image" loading="lazy">
+          <h3 class="product-title">Brown Ripper Rolling Paper 32 Leaves + 32...</h3>
+          <div class="product-subtitle">1 pack (64 pieces)</div>
+          <div class="product-price">₹120</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/63d35241-fbb8-40bb-8b95-dcb84a9656e7.jpg?ts=1740658589" alt="Perfect Pink" class="product-image" loading="lazy">
+          <h3 class="product-title">Perfect Rolling Paper (Pink) - Bongchie</h3>
+          <div class="product-subtitle">3 pack</div>
+          <div class="product-price">₹45</div>
+          <button class="add-button">ADD</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <h2>Cold Drinks & Beverages</h2>
+      <div class="product-container">
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/629b2189-65f7-49cb-bb5d-8bfdf0befea7.jpg?ts=1749195973" alt="Thums Up Soft Drink" class="product-image" loading="lazy">
+          <h3 class="product-title">Thums Up Soft Drink (750 ml)</h3>
+          <div class="product-subtitle">750 ml</div>
+          <div class="product-price">₹40</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b098a7d9-6eff-41de-8697-42dd0f8b8fa8.jpg?ts=1749196005" alt="Limca Lemon" class="product-image" loading="lazy">
+          <h3 class="product-title">Limca Lemon 'N' Lime Soft Drink 750 ml</h3>
+          <div class="product-subtitle">750 ml</div>
+          <div class="product-price">₹40</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/4c9a2d0f-6ce2-4db5-bbc1-83b195e9a56d.jpg?ts=1740295344" alt="Coca-Cola Zero" class="product-image" loading="lazy">
+          <h3 class="product-title">Coca-Cola Zero Sugar Soft Drink Can</h3>
+          <div class="product-subtitle">300 ml</div>
+          <div class="product-price">₹40</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/482620a.jpg?ts=1690813234" alt="Ice Cubes by Dras Ice" class="product-image" loading="lazy">
+          <h3 class="product-title">Ice Cubes by Dras Ice</h3>
+          <div class="product-subtitle">1 kg</div>
+          <div class="product-price"><span class="old-price">₹75</span> ₹64</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/f4efcb21-e0e8-4352-8013-dd693dbc63f1.jpg?ts=1738928361" alt="Rooh Afza Sharbat" class="product-image" loading="lazy">
+          <h3 class="product-title">Hamdard Rooh Afza Rose Sharbat</h3>
+          <div class="product-subtitle">750 ml</div>
+          <div class="product-price">₹180</div>
+          <button class="add-button">ADD</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/81348814-1a2d-45e1-b51b-7f32883c730b.jpg?ts=1749195943" alt="Coca-Cola Soft Drink" class="product-image" loading="lazy">
+          <h3 class="product-title">Coca-Cola Soft Drink (750 ml)</h3>
+          <div class="product-subtitle">750 ml</div>
+          <div class="product-price">₹40</div>
+          <button class="add-button">ADD</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+   <footer>
+  <div class="footer-container">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Blog</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>FAQs</li>
+          <li>Security</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul>
+          <li>Partner</li>
+          <li>Franchise</li>
+          <li>Seller</li>
+          <li>Warehouse</li>
+          <li>Deliver</li>
+          <li>Resources</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Categories <span class="see-all">see all</span></h3>
+        <ul>
+          <li>Vegetables & Fruits</li>
+          <li>Cold Drinks & Juices</li>
+          <li>Bakery & Biscuits</li>
+          <li>Dry Fruits, Masala & Oil</li>
+          <li>Paan Corner</li>
+          <li>Pharma & Wellness</li>
+          <li>Ice Creams & Frozen Desserts</li>
+          <li>Beauty & Cosmetics</li>
+          <li>Stationery Needs</li>
+          <li>Print Store</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul>
+          <li>Dairy & Breakfast</li>
+          <li>Instant & Frozen Food</li>
+          <li>Sweet Tooth</li>
+          <li>Sauces & Spreads</li>
+          <li>Organic & Premium</li>
+          <li>Cleaning Essentials</li>
+          <li>Personal Care</li>
+          <li>Fashion & Accessories</li>
+          <li>Books</li>
+          <li>E-Gift Cards</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul>
+          <li>Munchies</li>
+          <li>Tea, Coffee & Health Drinks</li>
+          <li>Atta, Rice & Dal</li>
+          <li>Chicken, Meat & Fish</li>
+          <li>Baby Care</li>
+          <li>Home & Office</li>
+          <li>Pet Care</li>
+          <li>Electronics & Electricals</li>
+          <li>Toys & Games</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Blink Commerce Private Limited, 2016-2025</p>
+      <div class="app-download">
+        <strong>Download App</strong>
+        <img src="https://blinkit.com/d61019073b700ca49d22.png" alt="App Store">
+        <img src="https://blinkit.com/8ed033800ea38f24c4f0.png" alt="Play Store">
+      </div>
+      <div class="app-download">
+
+</div>
+<div class="social-icons">
+  <i class="fab fa-facebook-f"></i>
+  <i class="fab fa-twitter"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-linkedin-in"></i>
+  <i class="fas fa-bolt"></i> 
+</div>
+
+    <div class="footer-note">
+      <p>“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”.</p>
+    </div>
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>
